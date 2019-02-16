@@ -1,0 +1,13 @@
+CREATE TABLE `ogms`.`tbl_personnel_action` ( `supervisor_email` VARCHAR(40) NOT NULL , `first_name` VARCHAR(40) NOT NULL ,
+ `last_name` VARCHAR(40) NOT NULL , `PantherID` INT(9) NOT NULL , `student_email` VARCHAR(40) NOT NULL ,
+  `degree` VARCHAR(10) NOT NULL , `enrollment` ENUM('Full-Time','Part-Time','','') NOT NULL ,
+   `appointment` VARCHAR(40) NOT NULL , `position` VARCHAR(40) NOT NULL , `term` VARCHAR(20) NOT NULL ,
+    `year` INT(4) NOT NULL , `total_FTE` INT(10) NOT NULL , `additional_appointments` BOOLEAN NOT NULL ,
+     `pos_title_1` VARCHAR(40) NOT NULL , `FTE_1` INT(2) NOT NULL , `speedtype_1` VARCHAR(10) NOT NULL ,
+      `comp_1` INT(10) NOT NULL , `per_month_comp_1` INT(5) NOT NULL , `start_date_1` DATE NOT NULL ,
+       `end_date_1` DATE NOT NULL , `pos_title_2` VARCHAR(40) NOT NULL , `FTE_2` INT(2) NOT NULL ,
+        `speedtype_2` VARCHAR(10) NOT NULL , `comp_2` INT(10) NOT NULL , `per_month_comp_2` INT(5) NOT NULL ,
+         `start_date_2` DATE NOT NULL , `end_date_2` DATE NOT NULL , `pos_title_3` VARCHAR(40) NOT NULL ,
+          `FTE_3` INT(2) NOT NULL , `speedtype_3` VARCHAR(10) NOT NULL , `comp_3` INT(10) NOT NULL ,
+           `per_month_comp_3` INT(5) NOT NULL , `start_date_3` DATE NOT NULL , `end_date_3` DATE NOT NULL ,
+            `waiver` ENUM('full','partial','','') NOT NULL , `total_comp` INT(10) NOT NULL ) ENGINE = InnoDB;
